@@ -1,0 +1,26 @@
+/* BASELINE */
+
+@mixin atSmall {
+  @media only screen and (max-width: 529px) {
+    @content;
+  }
+}
+
+@mixin atSmallMedium {
+  @media only screen and (min-width: 530px) and (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media only screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+// Viewport usage
+// p {
+//   @include atSmallMedium {
+//     background: red;
+//   }
+// }
